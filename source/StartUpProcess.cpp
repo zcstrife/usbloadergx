@@ -529,7 +529,7 @@ void StartUpProcess::Draw()
 	background->Draw();
 	GXImage->Draw();
 	titleTxt->Draw();
-	messageTxt->Draw();
+	//messageTxt->Draw();
 	versionTxt->Draw();
 	if (drawCancel)
 		cancelTxt->Draw();
