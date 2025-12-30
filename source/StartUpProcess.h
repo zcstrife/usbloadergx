@@ -16,6 +16,8 @@ private:
 	int FinalizeExecute();
 	bool USBSpinUp();
 	void TextFade(int direction);
+	void LogoFadeIn(GuiImage* logo, int step);
+	void FadeOutLogoAndBackground(GuiImage* logo, GuiImage* bg, int step);
 	void SetTextf(const char *format, ...);
 	void Draw();
 	static int ParseArguments(int argc, char *argv[]);
