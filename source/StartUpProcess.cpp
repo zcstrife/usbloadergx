@@ -40,7 +40,6 @@ StartUpProcess::StartUpProcess()
 	GXImageData = Resources::GetImageData("gxlogo.png");
 	GXImage = new GuiImage(GXImageData);
 	GXImage->SetAlignment(ALIGN_CENTER, ALIGN_MIDDLE);
-	GXImage->SetAlpha(0);
 	GXImage->SetPosition(screenwidth / 2, screenheight / 2 - 50);
 
 	titleTxt = new GuiText("Loading...", 24, (GXColor){255, 255, 255, 255});
@@ -575,4 +574,5 @@ int StartUpProcess::AutobootDisc()
 		return GameBooter::BootGame(header);
 	}
 }
+
 
