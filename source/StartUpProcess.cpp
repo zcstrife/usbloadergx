@@ -152,36 +152,6 @@ int StartUpProcess::ParseArguments(int argc, char *argv[])
 	return quickBoot;
 }
 
-void StartUpProcess::LogoFadeIn(GuiImage* logo, int step)
-{
-    if(!logo || step <= 0)
-        return;
-
-    for(int a = 0; a <= 255; a += step)
-    {
-        logo->SetAlpha(a);
-        Draw();
-    }
-    logo->SetAlpha(255);
-    Draw();
-}
-
-void StartUpProcess::FadeOutLogoAndBackground(GuiImage* logo, GuiImage* bg, int step)
-{
-    if(!logo || !bg || step >= 0)
-        return;
-
-    for(int a = 255; a >= 0; a += step) // step négatif
-    {
-        logo->SetAlpha(a);
-        bg->SetAlpha(a);
-        Draw();
-    }
-    logo->SetAlpha(0);
-    bg->SetAlpha(0);
-    Draw();
-}
-
 void StartUpProcess::TextFade(int direction)
 {
 	if (direction > 0)
@@ -559,13 +529,11 @@ void StartUpProcess::Draw()
 {
 	background->Draw();
 	GXImage->Draw();
-	LogoFadeIn(GXImage, 8);
 	//titleTxt->Draw();
 	//messageTxt->Draw();
 	//versionTxt->Draw();
 	if (drawCancel)
 		cancelTxt->Draw();
-	FadeOutLogoAndBackground(GXImage, background, -8);
 	Menu_Render();
 }
 
@@ -607,3 +575,4 @@ int StartUpProcess::AutobootDisc()
 		return GameBooter::BootGame(header);
 	}
 }
+
