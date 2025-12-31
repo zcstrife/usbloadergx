@@ -182,10 +182,10 @@ void StartUpProcess::SetTextf(const char *format, ...)
 	va_start(va, format);
 	if ((vasprintf(&tmp, format, va) >= 0) && tmp)
 	{
-		(-40);
+		TextFade(-40);
 		gprintf(tmp);
 		messageTxt->SetText(tmp);
-		(40);
+		TextFade(40);
 	}
 	va_end(va);
 
@@ -528,9 +528,9 @@ void StartUpProcess::Draw()
 {
 	background->Draw();
 	GXImage->Draw();
-	//titleTxt->Draw();
-	//messageTxt->Draw();
-	//versionTxt->Draw();
+	titleTxt->Draw();
+	messageTxt->Draw();
+	versionTxt->Draw();
 	if (drawCancel)
 		cancelTxt->Draw();
 	Menu_Render();
@@ -574,7 +574,3 @@ int StartUpProcess::AutobootDisc()
 		return GameBooter::BootGame(header);
 	}
 }
-
-
-
-
