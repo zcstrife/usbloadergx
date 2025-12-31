@@ -40,16 +40,16 @@ StartUpProcess::StartUpProcess()
 	GXImageData = Resources::GetImageData("gxlogo.png");
 	GXImage = new GuiImage(GXImageData);
 	GXImage->SetAlignment(ALIGN_CENTER, ALIGN_MIDDLE);
-	GXImage->SetPosition(screenwidth / 2, screenheight / 2 - 50);
-
+	GXImage->SetPosition(screenwidth / 2, screenheight / 2);
+/*
 	titleTxt = new GuiText("Loading...", 24, (GXColor){255, 255, 255, 255});
 	titleTxt->SetAlignment(ALIGN_CENTER, ALIGN_MIDDLE);
 	titleTxt->SetPosition(screenwidth / 2, screenheight / 2 + 30);
-
+*/
 	messageTxt = new GuiText(" ", 22, (GXColor){255, 255, 255, 255});
 	messageTxt->SetAlignment(ALIGN_CENTER, ALIGN_MIDDLE);
 	messageTxt->SetPosition(screenwidth / 2, screenheight / 2 + 60);
-
+/*
 	versionTxt = new GuiText(" ", 18, (GXColor){255, 255, 255, 255});
 	versionTxt->SetAlignment(ALIGN_LEFT, ALIGN_BOTTOM);
 	versionTxt->SetPosition(23, screenheight - 20);
@@ -62,7 +62,7 @@ StartUpProcess::StartUpProcess()
 #else
 	versionTxt->SetTextf("v4.0 Rev. %s (%s) / Unofficial", LOADER_REV, GIT_VER);
 #endif
-
+*/
 	if (strncmp(Settings.ConfigPath, "sd", 2) == 0)
 		cancelTxt = new GuiText("Press B to cancel or A to enable SD card mode", 22, (GXColor){255, 255, 255, 255});
 	else
@@ -91,9 +91,9 @@ StartUpProcess::~StartUpProcess()
 	delete background;
 	delete GXImageData;
 	delete GXImage;
-	delete titleTxt;
+	//delete titleTxt;
 	delete messageTxt;
-	delete versionTxt;
+	//delete versionTxt;
 	delete cancelTxt;
 	delete cancelBtn;
 	delete sdmodeBtn;
@@ -182,10 +182,10 @@ void StartUpProcess::SetTextf(const char *format, ...)
 	va_start(va, format);
 	if ((vasprintf(&tmp, format, va) >= 0) && tmp)
 	{
-		TextFade(-40);
+		(-40);
 		gprintf(tmp);
 		messageTxt->SetText(tmp);
-		TextFade(40);
+		(40);
 	}
 	va_end(va);
 
@@ -574,5 +574,6 @@ int StartUpProcess::AutobootDisc()
 		return GameBooter::BootGame(header);
 	}
 }
+
 
 
