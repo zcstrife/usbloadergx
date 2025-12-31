@@ -528,9 +528,9 @@ void StartUpProcess::Draw()
 {
 	background->Draw();
 	GXImage->Draw();
-	titleTxt->Draw();
-	messageTxt->Draw();
-	versionTxt->Draw();
+	//titleTxt->Draw();
+	//messageTxt->Draw();
+	//versionTxt->Draw();
 	if (drawCancel)
 		cancelTxt->Draw();
 	Menu_Render();
