@@ -16,7 +16,7 @@ Associated with a quick silent forwarder for USB Loader GX for Priiloader!
 
 I'm not responsible for any damage. This is what I did, and it worked perfectly for me!
 
-You can create yourself that exact same forwarder I used in the provided files, using ModMii: <br>
+You can create yourself that exact same forwarder I used in the provided files, using ModMii, if your really want to: <br>
 - Launch ModMii, <br>
 - type A (Advanced), ENTER<br>
 - type F (Forwarder Builder), ENTER<br>
