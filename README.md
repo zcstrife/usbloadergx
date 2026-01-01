@@ -1,5 +1,3 @@
-<p align="center"><a href="https://github.com/wiidev/usbloadergx/" title="USB Loader GX"><img src="data/images/gxlogo.png"></a></p>
-<p align="center">
 <a href="https://github.com/wiidev/usbloadergx/releases" title="Releases"><img src="https://img.shields.io/github/v/release/wiidev/usbloadergx?logo=github"></a>
 <a href="https://github.com/wiidev/usbloadergx/actions" title="Actions"><img src="https://img.shields.io/github/actions/workflow/status/wiidev/usbloadergx/main.yml?branch=enhanced&logo=github"></a>
 </p>
@@ -10,7 +8,7 @@ Associated with a quick channel forwarder for USB Loader GX "apps/usbloader_gx/b
 
 ## Installation
 1. Download the 7zip file above "USB_LOADER_GX_CLEAN_BOOT.7z"
-2. Delete any prior copy of the USB Loader GX in your apps.
+2. Delete any prior copy of "usbloader_gx" in your apps.
 3. Unzip "USB_LOADER_GX_CLEAN_BOOT.7z" and copy the content to the root of your sd/usb drive.
 4. Launch Priiloader, chose Load/Install File, chose "USB Loader GX Foarwarder.dol" located at the root of your drive .
 5. Once installed, go to Settings, Autoboot, and select "Installed File".
