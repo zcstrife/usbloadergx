@@ -4,7 +4,7 @@
 
 ## Description
 A simple unofficial mod of USB Loader GX, with just a white Wii logo.
-Associated with a quick channel forwarder for USB Loader GX "apps/usbloader_gx/boot.dol" for a clean fast boot to your games!
+Associated with a quick silent forwarder for USB Loader GX for a clean fast boot to your games!
 
 ## Installation
 1. Download the 7zip file above "USB_LOADER_GX_CLEAN_BOOT.7z"
