@@ -9,8 +9,9 @@ A simple unofficial mod of USB Loader GX, with just a white Wii logo.
 Associated with a quick channel forwarder for USB Loader GX "apps/usbloader_gx/boot.dol" for a clean fast boot to your games!
 
 ## Installation
-1. Replace the boot.dol file on your sd/usb drive, located here: "apps/usbloader_gx/boot.dol"
-2. Copy the forwarder to the root of your sd/usb drive.
-3. Launch Priiloader, chose Load/Install File, chose USB Loader GX Foarwarder.dol
-4. Once installed, go to Settings, Autoboot, select "Installedd File".
-5. Done!
+1. Download the 7zip file above "USB_LOADER_GX_CLEAN_BOOT.7z"
+2. Delete any prior copy of the USB Loader GX in your apps.
+3. Unzip "USB_LOADER_GX_CLEAN_BOOT.7z" and copy the content to the root of your sd/usb drive.
+4. Launch Priiloader, chose Load/Install File, chose "USB Loader GX Foarwarder.dol" located at the root of your drive .
+5. Once installed, go to Settings, Autoboot, and select "Installed File".
+6. You're done, enjoy!
