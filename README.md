@@ -21,7 +21,7 @@ You can create yourself that exact same forwarder I used in the provided files, 
 - type A (Advanced), ENTER<br>
 - type F (Forwarder Builder), ENTER<br>
 - type 1 (DOL), then 1 (SD/USB FORWARDER), ENTER<br>
-- type <B>"apps/usbloader_gx/boot.dol"</B> (Address of the file to launch), ENTER <b>(THIS IS VERY IMORTANT !!! Do not mess with that address or it won't work)</b><br>
+- type <B>"apps/usbloader_gx/boot.dol"</B> (Address of the file to launch), ENTER <b>(The address should match the structure on your drive)</b><br>
 - type "A" (Add Forwarder...), ENTER<br>
 - type ENTER (To skip wad creation), <br>
 - and finally type any name for your forwarder XXXXXX.dol, ENTER<br>
